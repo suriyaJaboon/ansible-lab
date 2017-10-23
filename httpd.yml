@@ -1,0 +1,10 @@
+---
+
+ # Install httpd apache CentOS
+ - name: install httpd apache
+   hosts: httpd
+   become: yes
+   remote_user: "{{ remote_user }}"
+ 
+   roles:
+    - httpd
