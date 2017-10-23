@@ -1,0 +1,6 @@
+---
+# Node.js TLS
+nodejs_version: "6.11.4"
+
+# Global packages (list of packages installed with -g option)
+nodejs_global_packages: [] 

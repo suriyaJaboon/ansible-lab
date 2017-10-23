@@ -1,0 +1,10 @@
+---
+
+ # Install Nodejs and NPM CentOS
+ - name: Install Nodejs and NPM 
+   hosts: nodejs
+   become: yes
+   remote_user: "{{ remote_user }}"
+ 
+   roles:
+    - nodejs
