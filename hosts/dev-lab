@@ -1,0 +1,27 @@
+[server]
+10.0.3.96 host_name=centos-7
+
+[server0]
+10.0.3.182 host_name=centos-7-0
+
+[server1]
+10.0.3.247 host_name=centos-7-1
+
+[httpd:children]
+server
+
+[mongodb:children]
+server
+server0
+server1
+
+[nodejs:children]
+server
+server0
+server1
+
+[all:children]
+server
+server0
+server1
+
