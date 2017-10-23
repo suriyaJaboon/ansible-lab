@@ -1,0 +1,9 @@
+---
+##########: This Role Mongodb :##########
+
+# Should this role use install tasks for installing MongoDB?
+mongodb_manage_installation: yes
+
+# Version of MongoDB
+mongodb_version: "3.4.7"
+

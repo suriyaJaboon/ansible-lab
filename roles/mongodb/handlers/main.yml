@@ -1,0 +1,17 @@
+---
+ # This handler is executed on change in MongoDB configuration file
+ 
+  - name: Restart mongodb 
+    service: 
+      name: mongod 
+      state: restarted
+  
+  - name: Start mongodb
+    service: 
+      name: mongod 
+      state: started
+
+  - name: Stop mongodb
+    service: 
+      name: mongod 
+      state: stopped
