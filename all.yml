@@ -1,0 +1,12 @@
+---
+
+ # Install all Httpd, Mongodb, Nodejs and NPM CentOS
+ - name: Install all Httpd, Mongodb, Nodejs and NPM CentO
+   hosts: all
+   become: yes
+   remote_user: "{{ remote_user }}"
+ 
+   roles:
+    - httpd
+    - mongodb
+    - nodejs
